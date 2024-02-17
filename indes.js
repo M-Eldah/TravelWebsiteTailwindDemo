@@ -8,8 +8,11 @@ function selectDestination(id, path, credit) {
         document.getElementById(id).classList.add('selectedDestination');
         document.getElementById("curtain").classList.add("bg-black");
         setTimeout(() => {
-            document.getElementById("credit").innerText = credit;
             document.getElementById("backgroundimg").src = path;
+        }, 800)
+        setTimeout(() => {
+            document.getElementById("credit").innerText = credit;
+
             document.getElementById("curtain").classList.remove("bg-black");
             chaning = false;
         }, 1400)
