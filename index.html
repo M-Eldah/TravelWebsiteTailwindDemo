@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script
+            src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+        <script src="indes.js"></script>
+        <link rel="stylesheet" href="styles.css">
+        <style></style>
+    </head>
+    <body class="bg-blue-950">
+        <div class="relative w-full h-screen">
+            <div id="curtain"
+                class="absolute size-full transition-all duration-700 ease-in -z-30"></div>
+            <h1
+                class="absolute top-10 left-0 z-30 text-white text-7xl pl-9 underline">Travalux</h1>
+            <h1
+                class="absolute top-[8rem] left-0 z-30 text-white text-2xl pl-9">a
+                combination of travel and luxury.</h1>
+            <img src="img/pexels-photo-1028225.jpeg"
+                id="backgroundimg"
+                class="object-cover size-full absolute -z-50"
+                alt="backgroundimg">
+            <div
+                class="bg-black/80 w-6/12 h-14 absolute top-[4rem] right-10 rounded-md flex flex-row">
+                <button class="text-white text-2xl pl-2">Travel
+                    location</button>
+                <div class="absolute right-0 h-full flex flex-row">
+                    <input type="text"
+                        class=" p-0 self-center bg-slate-700 border-none text-white text-xl pl-2">
+                    <button
+                        class="text-white text-2xl pl-2 h-full pr-2">Search</button>
+                </div>
+
+            </div>
+            <div
+                class="w-[32rem] h-full bg-black/[0.6] flex">
+                <ul class="flex flex-col space-y-9 pl-9 self-center">
+                    <li><button id="loc1"
+                            onclick="selectDestination('loc1','img/pexels-photo-1028225.jpeg','Photo by Martin  Péchy')"
+                            class=" transition-all text-white/25 hover:text-white/50 hover:text-4xl hover:text-white w-max text-3xl selectedDestination">Wasserauen,
+                            AI, Switzerland</button></li>
+                    <li><button id="loc2"
+                            onclick="selectDestination('loc2','img/pexels-daniel-shipilov-8349208.jpg','Photo by Daniel Shipilov')"
+                            class="  transition-all text-white/25 hover:text-white/50 hover:text-4xl hover:text-white w-max text-3xl">Kvæfjord
+                            kommune, Troms og Finnmark, Norway</button></li>
+                    <li><button id="loc3"
+                            onclick="selectDestination('loc3','img/pexels-cole-keister-3481026.jpg','Photo by Cole Keister')"
+                            class=" transition-all text-white/25 hover:text-white/50 hover:text-4xl hover:text-white w-max text-3xl">Ninh
+                            Bình, Ninh Bình Province, Vietnam
+                        </button></li>
+                </ul>
+            </div>
+            <div
+                class="absolute bottom-[7rem] right-10 text-white text-8xl"
+                style="text-shadow: 8px 8px 5px #000000da;">
+                A
+                New
+                journey awaits</div>
+            <div
+                class="absolute bottom-10 right-10 text-white text-xl bg-black/80 p-2 rounded-md -z-40">
+                <a
+                    id="credit">Photo by Martin Péchy</a></div>
+        </div>
+
+    </body>
+</html>
